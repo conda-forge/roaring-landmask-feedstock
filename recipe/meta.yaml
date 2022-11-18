@@ -36,8 +36,7 @@ requirements:
     - xz
 
 test:
-  skip:
-    True  # [ osx-arm64 ]
+  skip: True  # [ osx-arm64 ]
   imports:
     - roaring_landmask
   commands:
