@@ -4,6 +4,7 @@ github:
 provider: {linux_aarch64: azure }
 build_platform:
   osx_arm64: osx_64
+test: native_and_emulated
 conda_forge_output_validation: true
 conda_build:
   pkg_format: '2'
