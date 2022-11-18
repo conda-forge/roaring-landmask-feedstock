@@ -1,5 +1,7 @@
 github:
   branch_name: main
   tooling_branch_name: main
-provider: {linux_aarch64: azure }
+provider: {linux_aarch64: azure}
 conda_forge_output_validation: true
+conda_build:
+  pkg_format: '2'
