@@ -22,7 +22,7 @@ requirements:
     - maturin                             # [build_platform != target_platform]
     - {{ compiler('c') }}             # [ linux ]
     - {{ compiler('m2w64_c') }}       # [ win ]
-    - {{ compiler('cxx') }}           # [ linux ]
+    - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
   host:
     - python
@@ -33,6 +33,7 @@ requirements:
     - python
     - libgcc-ng  # [ linux ]
     - libcxx     # [ osx ]
+    - libcxx     # [ win ]
     - xz
 
 test:
