@@ -1,5 +1,5 @@
 {% set name = "roaring-landmask" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/roaring_landmask-{{ version }}.tar.gz
-  sha256: 0a289eaf276f59f46f7924faa5cf058b3b6d2be02a0f437c1466b572f75f0aef
+  sha256: 27b44a7004e6a25ee32e0fedc6b35936eb118aedb6187c237b8287255f7202ff
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
