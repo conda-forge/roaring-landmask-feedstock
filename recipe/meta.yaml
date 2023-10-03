@@ -32,6 +32,8 @@ requirements:
     - python
     - libgcc-ng  # [ linux ]
     - libcxx     # [ osx ]
+    - libcxx     # [ win ]
+    - vc14_runtime  # [ win ]
     - xz
 
 test:
