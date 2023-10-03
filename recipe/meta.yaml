@@ -23,6 +23,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
+    - libcxx     # [ win ]
+    - vc14_runtime  # [ win ]
   host:
     - python
     - pip
