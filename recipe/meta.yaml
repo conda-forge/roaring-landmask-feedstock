@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/roaring_landmask-{{ version }}.tar.gz
-  sha256: 27b44a7004e6a25ee32e0fedc6b35936eb118aedb6187c237b8287255f7202ff
+  url: https://github.com/gauteh/roaring-landmask/archive/refs/heads/geos311.zip
+  sha256: 8dfb19fc40ec30214b5ff9473f32a1b56669933864f3e41e5983af70c5b28098
 
 build:
   number: 0
@@ -32,8 +32,6 @@ requirements:
     - python
     - libgcc-ng  # [ linux ]
     - libcxx     # [ osx ]
-    - libcxx     # [ win ]
-    - vc14_runtime  # [ win ]
     - xz
 
 test:
