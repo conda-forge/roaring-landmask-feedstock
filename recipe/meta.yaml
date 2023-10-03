@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/gauteh/roaring-landmask/archive/refs/heads/geos311.zip
-  sha256: 35d21b6deb33000bbe49e8aac66d735693a02529447054a975c3c6913e35b3db
+  sha256: 32b695a87b4fb08e92444634bfcf86823b48c34b2ce43d0594a437250530a145
 
 build:
   number: 0
