@@ -1,29 +1,30 @@
 {% set name = "roaring-landmask" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/roaring_landmask-{{ version }}.tar.gz
-  sha256: 0a289eaf276f59f46f7924faa5cf058b3b6d2be02a0f437c1466b572f75f0aef
+  url: https://github.com/gauteh/roaring-landmask/archive/refs/heads/geos311.zip
+  sha256: 32b695a87b4fb08e92444634bfcf86823b48c34b2ce43d0594a437250530a145
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
     - cmake
     - make
     - pkg-config
-    - python
+    - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - maturin                             # [build_platform != target_platform]
-    - {{ compiler('c') }}             # [ linux ]
-    - {{ compiler('m2w64_c') }}       # [ win ]
-    - {{ compiler('cxx') }}           # [ linux ]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
+    - libcxx     # [ win ]
+    - vc14_runtime  # [ win ]
   host:
     - python
     - pip
@@ -33,6 +34,8 @@ requirements:
     - python
     - libgcc-ng  # [ linux ]
     - libcxx     # [ osx ]
+    - libcxx     # [ win ]
+    - vc14_runtime  # [ win ]
     - xz
 
 test:
