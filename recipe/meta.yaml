@@ -10,7 +10,7 @@ source:
   sha256: 0a289eaf276f59f46f7924faa5cf058b3b6d2be02a0f437c1466b572f75f0aef
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -21,7 +21,9 @@ requirements:
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - maturin                             # [build_platform != target_platform]
     - {{ compiler('c') }}             # [ linux ]
+    - {{ stdlib("c") }}               # [ linux ]
     - {{ compiler('m2w64_c') }}       # [ win ]
+    - {{ stdlib("m2w64_c") }}         # [ win ]
     - {{ compiler('cxx') }}           # [ linux ]
     - {{ compiler('rust') }}
   host:
