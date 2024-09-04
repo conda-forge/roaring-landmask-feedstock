@@ -33,7 +33,7 @@ requirements:
     - pkg-config
   run:
     - python
-    - libgcc-ng  # [ linux ]
+    - libgcc     # [ linux ]
     - libcxx     # [ osx ]
     - xz
 
