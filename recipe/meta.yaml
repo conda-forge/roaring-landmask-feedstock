@@ -25,6 +25,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
     - {{ compiler('m2w64_c') }}       # [ win ]
+    - {{ stdlib("m2w64_c") }}         # [ win ]
   host:
     - python
     - pip
