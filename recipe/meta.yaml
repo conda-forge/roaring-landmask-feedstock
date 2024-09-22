@@ -11,7 +11,7 @@ source:
 
 build:
   number: 1
-  skip: true  # [win and vc<14]
+  skip: true
 
 requirements:
   build:
@@ -25,6 +25,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
+    - geos
   host:
     - python
     - pip
@@ -33,6 +34,7 @@ requirements:
   run:
     - python
     - xz
+    - geos
 
 test:
   imports:
