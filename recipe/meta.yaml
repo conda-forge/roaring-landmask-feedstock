@@ -11,6 +11,7 @@ source:
 
 build:
   number: 1
+  skip: true  # [win]
 
 requirements:
   build:
@@ -24,7 +25,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
-    - geos  # [win]
   host:
     - python
     - pip
@@ -33,7 +33,6 @@ requirements:
   run:
     - python
     - xz
-    - geos  # [win]
 
 test:
   imports:
