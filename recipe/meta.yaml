@@ -24,7 +24,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('rust') }}
-    - geos
+    - geos  # [win]
   host:
     - python
     - pip
@@ -33,7 +33,7 @@ requirements:
   run:
     - python
     - xz
-    - geos
+    - geos  # [win]
 
 test:
   imports:
