@@ -16,6 +16,9 @@ set PYTHONIOENCODING="UTF-8"
 REM https://github.com/rust-lang/cargo/issues/10583#issuecomment-1129997984
 set CARGO_NET_GIT_FETCH_WITH_CLI=true
 
+set CMAKE_BUILD_PARALLEL_LEVEL=1
+set CARGO_BUILD_JOBS=1
+
 set PYO3_PYTHON=%PYTHON%
 set MATURIN_PEP517_ARGS=--features extension-module,static -vv
 %PYTHON% -m pip install . --no-deps --ignore-installed -vv
