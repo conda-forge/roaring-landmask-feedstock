@@ -1,2 +1,6 @@
 channel_sources:
   - conda-forge/label/rust_dev,conda-forge
+c_compiler:    # [win]
+- vs2022       # [win]
+cxx_compiler:  # [win]
+- vs2022       # [win]
