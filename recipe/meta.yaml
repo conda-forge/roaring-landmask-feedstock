@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/roaring_landmask-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/roaring_landmask-{{ version }}.tar.gz
   sha256: 551dd95d3c6b735ccea102b45bd0996b39581486a9934923265e87edfb3fdd15
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
